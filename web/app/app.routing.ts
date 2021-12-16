@@ -274,6 +274,10 @@ const routes: Routes = [
                 ],
             },
             {
+                path: "widgets",
+                children: [ { path: "stickerpicker", pathMatch: "prefix", redirectTo: "/riot-app/stickerpicker" } ]
+            },
+            {
                 path: "stickerpicker",
                 component: StickerpickerComponent,
                 data: {breadcrumb: "Your Sticker Packs", name: "Your Sticker Packs"},
